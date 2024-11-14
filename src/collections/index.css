@@ -1,0 +1,71 @@
+.collection-maindiv {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 30px;
+  overflow: hidden;
+}
+.collection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.collection p {
+  font-size: 0.8rem;
+  white-space: break-spaces;
+}
+.collection img {
+  width: 80%;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.outer-collections-container {
+  /* margin: auto;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  border-radius: 5px;
+  padding-top: 10px; */
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+  list-style: "none";
+  padding-left: 0;
+}
+.collections::-webkit-scrollbar {
+  display: none;
+}
+.text-xs {
+  font-size: 0.8rem;
+}
+a {
+  padding: 0.5rem;
+}
+.links-div a {
+  padding: 0.5rem 1rem;
+}
+.collection:hover img {
+  width: 60%;
+}
+.collection:hover {
+  overflow: unset;
+}
+.collection:hover .collection-list {
+  opacity: 1;
+}
+.collection-remainingdet {
+  position: relative;
+}
+.collection-list {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-bottom: -40px;
+  opacity: 0;
+  transition: 0.5s;
+}
